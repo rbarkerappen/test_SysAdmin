@@ -1,0 +1,12 @@
+*.pyc
+*sublime*
+*.swp
+.DS_Store
+.elasticbeanstalk/config
+.idea
+venvappenonline/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
