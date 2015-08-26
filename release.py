@@ -88,12 +88,12 @@ try:
 	print("Release %s built successfully." %args.version)
 	if args.nopush:
 		print("The release has not been pushed. Please use the following command if you want to push the release:")
-		print("  git push origin %s" %args.version)
 		print("  git push origin")
+		print("  git push origin %s" %args.version)
 	else:
 		print("Pushing version %s" %args.version)
-		execute("git push origin %s" %args.version)
 		execute("git push origin")
+		execute("git push origin %s" %args.version)
 
 except Exception:
 	# move back to original dir if there is an error (so 
