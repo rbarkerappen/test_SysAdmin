@@ -94,7 +94,7 @@ if diff:
 		print("Warning: Possible version change detected, but could not determine current version. Please manually tag the commit if the version has changed.")
 
 	elif not previousVersion and currentVersion:
-		print("Warning: Possible version change detected, but could not determine current version. Please manually tag the commit if the version has changed.")
+		print("Warning: Possible version change detected, but could not determine previous version. Please manually tag the commit if the version has changed.")
 
 	else:
 		print("Detected version change from %s to %s" %(previousVersion, currentVersion))
