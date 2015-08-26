@@ -9,5 +9,9 @@ setup(
 	
 	url="http://www.appen.com",
 	author="Appen",
-	author_email="it@appen.com"
+	author_email="it@appen.com",
+	
+	# TODO add any dependencies here
+	install_requires = [
+	]
 )
