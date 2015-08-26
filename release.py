@@ -9,8 +9,6 @@ Usage:
 Important: various git commands and performed in this script, so please make sure any
 changes to the code are committed and pushed *before* running this script.
 
-Important: this script must be run in the same location that it is stored in.
-
 This script was developed using commands compatible with git version 2.1.0.
 """
 
@@ -65,7 +63,7 @@ def execute(command):
 parser = ArgumentParser(__doc__)
 parser.add_argument("-v", "--version", type=str, default=getDefaultVersion(), help="Version number.")
 parser.add_argument("-m", "--message", type=str, required=True, help="Brief description of what was changed or updated. Used on the git tag.")
-parser.add_argument("-f", "--folder", type=str, default=".", help="The location of the repo. If not provided, the current directory is assumed.")
+parser.add_argument("-f", "--folder", type=str, default=".", help="The root of the repo. If not provided, the current directory is assumed.")
 parser.add_argument("--nopush", action="store_true", default=False, help="Use this if the release should not be pushed.")
 args = parser.parse_args()
 
